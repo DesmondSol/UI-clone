@@ -23,52 +23,12 @@ class Settings extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      IconButton(
-                        onPressed: () => Navigator.pop(context),
-                        icon: const Icon(Icons.chevron_left),
-                        iconSize: 40,
-                        visualDensity:
-                            const VisualDensity(horizontal: -0.5, vertical: -1),
-                      ),
-                      InkWell(
-                        onTap: () {
-                          Scaffold.of(context).showSnackBar(SnackBar(
-                              duration: const Duration(milliseconds: 500),
-                              margin: const EdgeInsets.all(10),
-                              elevation: 0,
-                              behavior: SnackBarBehavior.floating,
-                              backgroundColor: Theme.of(context).primaryColor,
-                              content: const Text("Data Saved")));
-                        },
-                        child: Container(
-                          decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(10),
-                            color: Colors.blue,
-                            boxShadow: [
-                              BoxShadow(
-                                  color: Colors.black.withOpacity(0.6),
-                                  blurRadius: 10,
-                                  offset: const Offset(2, 2))
-                            ],
-                          ),
-                          // border: Border.all(width: 3, color: Colors.white),
-                          // color: Color(0xffd1c4e9),
-                          // borderRadius: BorderRadius.circular(10)),
-                          height: 55,
-                          width: 55,
-                          child: const Center(
-                            child: Icon(
-                              Icons.done,
-                              color: Colors.white,
-                              size: 30,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
+                  IconButton(
+                    onPressed: () => Navigator.pop(context),
+                    icon: const Icon(Icons.chevron_left),
+                    iconSize: 40,
+                    visualDensity:
+                        const VisualDensity(horizontal: -0.5, vertical: -1),
                   ),
                   const SizedBox(
                     height: 30,
