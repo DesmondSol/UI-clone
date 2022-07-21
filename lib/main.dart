@@ -113,51 +113,32 @@ class _MyHomePageState extends State<MyHomePage>
                   child: Scaffold(
                       backgroundColor: Colors.deepPurpleAccent[50],
                       key: _scaffoldKey,
-                      appBar: AppBar(
-                        brightness: Brightness.dark,
-                        leading: IconButton(
-                          icon: AnimatedIcon(
-                            icon: AnimatedIcons.arrow_menu,
-                            progress: animation,
-                          ),
-                          onPressed: () {
-                            if (isNavigationDrawerOpened) {
-                              controller.reverse();
-                              swipeAnimationKey.currentState
-                                  ?.hideNavigationDrawer();
-                            } else {
-                              controller.forward();
-                              swipeAnimationKey.currentState
-                                  ?.showNavigationDrawer();
-                            }
-                          },
-                        ),
-                        //title: Text("menuItems[currentPage].menuName"),
-                        backgroundColor: Theme.of(context).primaryColor,
-                        actions: <Widget>[
-                          IconButton(
-                            icon: const Icon(
-                              Icons.help_outline_sharp,
-                            ),
-                            tooltip: 'Help',
-                            onPressed: () {
-                              final snackBar = SnackBar(
-                                content: Text(
-                                  'by Solomon T',
-                                  textAlign: TextAlign.center,
-                                ),
-                                backgroundColor: Theme.of(context).primaryColor,
-                                //      duration: Duration(milliseconds: 200),
-                              );
-                              ScaffoldMessenger.of(context)
-                                  .showSnackBar(snackBar);
-                            },
-                          ),
-                        ],
-                        // leading: Icon(Icons.access_time_sharp),
-                        // leadingWidth: 70,
-                        title: const Text('UI clone pages'),
-                      ),
+                      // appBar: AppBar(
+                      //   brightness: Brightness.dark,
+                      //   leading: IconButton(
+                      //     icon: AnimatedIcon(
+                      //       icon: AnimatedIcons.arrow_menu,
+                      //       progress: animation,
+                      //     ),
+                      //     onPressed: () {
+                      //       if (isNavigationDrawerOpened) {
+                      //         controller.reverse();
+                      //         swipeAnimationKey.currentState
+                      //             ?.hideNavigationDrawer();
+                      //       } else {
+                      //         controller.forward();
+                      //         swipeAnimationKey.currentState
+                      //             ?.showNavigationDrawer();
+                      //       }
+                      //     },
+                      //   ),
+                      //   //title: Text("menuItems[currentPage].menuName"),
+                      //   backgroundColor: Theme.of(context).primaryColor,
+
+                      //   // leading: Icon(Icons.access_time_sharp),
+                      //   // leadingWidth: 70,
+                      //   title: const Text('UI clone pages'),
+                      // ),
                       body: BottomNavigationWidget()
                       // SafeArea(
                       //   child: Center(

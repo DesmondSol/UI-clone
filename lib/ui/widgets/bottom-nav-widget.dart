@@ -28,6 +28,33 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
           style: TextStyle(
               color: Colors.black, fontSize: 15, fontWeight: FontWeight.bold),
         ),
+        actions: <Widget>[
+          IconButton(
+            icon: const Icon(
+              Icons.help_outline_sharp,
+              color: Colors.black,
+            ),
+            tooltip: 'Help',
+            onPressed: () {
+              final snackBar = SnackBar(
+                content: Text(
+                  'by Solomon T',
+                  textAlign: TextAlign.center,
+                ),
+                backgroundColor: Theme.of(context).primaryColor,
+                //      duration: Duration(milliseconds: 200),
+              );
+              ScaffoldMessenger.of(context).showSnackBar(snackBar);
+              // Scaffold.of(context).showSnackBar(SnackBar(
+              //     duration: Duration(milliseconds: 500),
+              //     margin: EdgeInsets.all(10),
+              //     elevation: 0,
+              //     behavior: SnackBarBehavior.floating,
+              //     backgroundColor: Theme.of(context).primaryColor,
+              //     content: Text("by Solomon T")));
+            },
+          ),
+        ],
       ),
       body: [SettingsPage(), PersonalDataScreen(), CommunityPage()][_current],
       bottomNavigationBar: BottomNavigationBar(
