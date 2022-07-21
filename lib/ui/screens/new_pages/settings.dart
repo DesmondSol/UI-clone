@@ -1,4 +1,5 @@
 import 'package:demo/ui/widgets/toggle_switch.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Settings extends StatelessWidget {
@@ -25,7 +26,7 @@ class Settings extends StatelessWidget {
                 children: [
                   IconButton(
                     onPressed: () => Navigator.pop(context),
-                    icon: const Icon(Icons.chevron_left),
+                    icon: const Icon(CupertinoIcons.chevron_left),
                     iconSize: 40,
                     visualDensity:
                         const VisualDensity(horizontal: -0.5, vertical: -1),
@@ -39,7 +40,7 @@ class Settings extends StatelessWidget {
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             fontWeight: FontWeight.bold,
-                            fontSize: 36,
+                            fontSize: 47,
                             color: Color.fromRGBO(4, 7, 32, 1))),
                   ),
                   const SizedBox(
@@ -51,7 +52,7 @@ class Settings extends StatelessWidget {
                         textAlign: TextAlign.start,
                         style: TextStyle(
                             fontWeight: FontWeight.w500,
-                            fontSize: 20,
+                            fontSize: 24,
                             color: Color.fromRGBO(4, 7, 32, 1))),
                   ),
                   SizedBox(
@@ -69,8 +70,9 @@ class Settings extends StatelessWidget {
                         height: 60,
                         width: 60,
                         child: const Icon(
-                          Icons.perm_identity,
+                          CupertinoIcons.person_alt,
                           size: 35,
+                          color: Colors.grey,
                         ),
                       ),
                       title: const Text(
