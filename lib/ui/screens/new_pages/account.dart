@@ -23,7 +23,7 @@ class Account extends StatelessWidget {
           children: <Widget>[
             // Display passed data from first screen
             Padding(
-              padding: const EdgeInsets.only(top: 40, left: 5, right: 15),
+              padding: const EdgeInsets.only(top: 35, left: 5, right: 15),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
@@ -161,7 +161,7 @@ class Account extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 28,
+              height: 40,
             ),
             Padding(
               padding: EdgeInsets.only(left: 22, right: 30),
@@ -210,7 +210,7 @@ class Account extends StatelessWidget {
               ),
             ),
             SizedBox(
-              height: 28,
+              height: 38,
             ),
             Padding(
               padding: EdgeInsets.only(left: 22, right: 30),
