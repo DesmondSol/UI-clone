@@ -20,6 +20,9 @@ class MyApp extends StatelessWidget {
       title: 'UI clone',
       theme: ThemeData(
         primarySwatch: Colors.deepPurple,
+        textTheme:GoogleFonts.latoTextTheme(textTheme).copyWith(
+           bodyText1: GoogleFonts.montserrat(textStyle: textTheme.bodyText1),
+         ),
       ),
       home: const MyHomePage(title: 'home page'),
     );

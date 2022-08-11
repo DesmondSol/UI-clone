@@ -95,7 +95,7 @@ class Account extends StatelessWidget {
                     child: Row(
                       children: [
                         Column(children: [
-                          Text(
+                          const Text(
                             "Photo",
                             textAlign: TextAlign.start,
                             style: TextStyle(fontSize: 20, color: Colors.grey),
