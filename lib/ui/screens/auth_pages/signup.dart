@@ -1,10 +1,11 @@
+import 'package:demo/ui/screens/homeNavigation.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_login_signup/src/Widget/bezierContainer.dart';
-import 'package:flutter_login_signup/src/loginPage.dart';
+import 'Widget/bezierContainer.dart';
+import 'loginPage.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class SignUpPage extends StatefulWidget {
-  SignUpPage({Key ?key, this.title}) : super(key: key);
+  SignUpPage({Key? key, this.title}) : super(key: key);
 
   final String? title;
 
@@ -59,26 +60,34 @@ class _SignUpPageState extends State<SignUpPage> {
   }
 
   Widget _submitButton() {
-    return Container(
-      width: MediaQuery.of(context).size.width,
-      padding: EdgeInsets.symmetric(vertical: 15),
-      alignment: Alignment.center,
-      decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(5)),
-          boxShadow: <BoxShadow>[
-            BoxShadow(
-                color: Colors.grey.shade200,
-                offset: Offset(2, 4),
-                blurRadius: 5,
-                spreadRadius: 2)
-          ],
-          gradient: LinearGradient(
-              begin: Alignment.centerLeft,
-              end: Alignment.centerRight,
-              colors: [Color(0xfffbb448), Color(0xfff7892b)])),
-      child: Text(
-        'Register Now',
-        style: TextStyle(fontSize: 20, color: Colors.white),
+    return InkWell(
+      onTap: () {
+        Navigator.popAndPushNamed(
+            context, MyHomeNavigation(title: "home page").toString()
+            //MaterialPageRoute(builder: (context) => LoginPage()),
+            );
+      },
+      child: Container(
+        width: MediaQuery.of(context).size.width,
+        padding: EdgeInsets.symmetric(vertical: 15),
+        alignment: Alignment.center,
+        decoration: BoxDecoration(
+            borderRadius: BorderRadius.all(Radius.circular(5)),
+            boxShadow: <BoxShadow>[
+              BoxShadow(
+                  color: Colors.grey.shade200,
+                  offset: Offset(2, 4),
+                  blurRadius: 5,
+                  spreadRadius: 2)
+            ],
+            gradient: LinearGradient(
+                begin: Alignment.centerLeft,
+                end: Alignment.centerRight,
+                colors: [Color(0xfffbb448), Color(0xfff7892b)])),
+        child: Text(
+          'Register Now',
+          style: TextStyle(fontSize: 20, color: Colors.white),
+        ),
       ),
     );
   }
@@ -124,9 +133,7 @@ class _SignUpPageState extends State<SignUpPage> {
           style: TextStyle(
               fontSize: 30,
               fontWeight: FontWeight.w700,
-              color: Color(0xffe46b10)
-          ),
-
+              color: Color(0xffe46b10)),
           children: [
             TextSpan(
               text: 'ev',
