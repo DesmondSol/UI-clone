@@ -1,3 +1,4 @@
+import 'Widget/title.dart';
 import 'signup.dart';
 import 'package:flutter/material.dart';
 
@@ -29,7 +30,7 @@ class _WelcomePageState extends State<WelcomePage> {
             borderRadius: BorderRadius.all(Radius.circular(5)),
             boxShadow: <BoxShadow>[
               BoxShadow(
-                  color: Color(0xffdf8e33).withAlpha(100),
+                  color: Colors.deepPurple.withAlpha(100),
                   offset: Offset(2, 4),
                   blurRadius: 8,
                   spreadRadius: 2)
@@ -37,7 +38,7 @@ class _WelcomePageState extends State<WelcomePage> {
             color: Colors.white),
         child: Text(
           'Login',
-          style: TextStyle(fontSize: 20, color: Color(0xfff7892b)),
+          style: TextStyle(fontSize: 20, color: Colors.deepPurple),
         ),
       ),
     );
@@ -93,30 +94,6 @@ class _WelcomePageState extends State<WelcomePage> {
         ));
   }
 
-  Widget _title() {
-    return RichText(
-      textAlign: TextAlign.center,
-      text: TextSpan(
-          text: 'd',
-          style: GoogleFonts.portLligatSans(
-            textStyle: Theme.of(context).textTheme.headline1,
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-          ),
-          children: [
-            TextSpan(
-              text: 'ev',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
-            TextSpan(
-              text: 'rnz',
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-          ]),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -136,12 +113,16 @@ class _WelcomePageState extends State<WelcomePage> {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xfffbb448), Color(0xffe46b10)])),
+                  colors: [
+                    Color.fromARGB(255, 196, 168, 247),
+                    Colors.deepPurple
+                    //Color(0xfffbb448), Color(0xffe46b10)
+                  ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              _title(),
+              title(context, 1),
               SizedBox(
                 height: 80,
               ),
