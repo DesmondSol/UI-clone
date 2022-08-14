@@ -21,8 +21,20 @@ List<MenuItem> menuItems = [
     menuIcon: Icons.person_rounded,
   ),
   MenuItem(
+    menuName: 'Complain',
+    menuIcon: CupertinoIcons.exclamationmark_bubble,
+  ),
+  MenuItem(
     menuName: 'Settings',
     menuIcon: Icons.settings,
+  ),
+  MenuItem(
+    menuName: 'help',
+    menuIcon: CupertinoIcons.question_circle_fill,
+  ),
+  MenuItem(
+    menuName: 'about us',
+    menuIcon: CupertinoIcons.person_3,
   ),
 ];
 

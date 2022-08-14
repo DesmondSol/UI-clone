@@ -1,4 +1,7 @@
 import 'package:demo/ui/screens/auth_pages/Widget/title.dart';
+import 'package:demo/ui/screens/sidebar_pages/about-us.dart';
+import 'package:demo/ui/screens/sidebar_pages/complain.dart';
+import 'package:demo/ui/screens/sidebar_pages/help.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/ui/screens/new_pages/account.dart';
 import 'package:demo/data/models/model.dart';
@@ -33,7 +36,7 @@ class _SideMenuState extends State<SideMenu> {
                 const Padding(
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Text(
-                    'Enjoy',
+                    'welcome',
                     style: TextStyle(color: Colors.white),
                   ),
                 ),
@@ -109,7 +112,22 @@ class _SideMenuState extends State<SideMenu> {
                             Navigator.push(
                                 context,
                                 new MaterialPageRoute(
+                                    builder: (context) => complain()));
+                          } else if (index == 3) {
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
                                     builder: (context) => Settings()));
+                          } else if (index == 4) {
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) => help()));
+                          } else if (index == 5) {
+                            Navigator.push(
+                                context,
+                                new MaterialPageRoute(
+                                    builder: (context) => aboutUs()));
                           }
                           setState(() {
                             _currentPage = index;

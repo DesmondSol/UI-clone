@@ -14,7 +14,7 @@ class BottomNavigationWidget extends StatefulWidget {
 class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
   int _current = 0;
 
-  List<String> _titles = ["Settings", "Personal Data", "Community"];
+  List<String> _titles = ["News", "Blogs", "Tenders", "Dashboard", "Profile"];
 
   @override
   Widget build(BuildContext context) {
