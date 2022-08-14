@@ -1,3 +1,4 @@
+import 'package:demo/ui/screens/auth_pages/Widget/title.dart';
 import 'package:flutter/material.dart';
 import 'package:demo/ui/screens/new_pages/account.dart';
 import 'package:demo/data/models/model.dart';
@@ -40,7 +41,7 @@ class _SideMenuState extends State<SideMenu> {
                   padding: EdgeInsets.symmetric(horizontal: 16, vertical: 4),
                   child: Row(
                     crossAxisAlignment: CrossAxisAlignment.start,
-                    children: const <Widget>[
+                    children: <Widget>[
                       Padding(
                         padding: EdgeInsets.all(8.0),
                         child: Icon(
@@ -57,14 +58,15 @@ class _SideMenuState extends State<SideMenu> {
                         //   ),
                         // ),
                       ),
-                      Text(
-                        'BIT',
-                        textAlign: TextAlign.start,
-                        style: TextStyle(
-                          color: Colors.white,
-                          fontSize: 48,
-                        ),
-                      )
+                      title(context, 1),
+                      // Text(
+                      //   'BIT',
+                      //   textAlign: TextAlign.start,
+                      //   style: TextStyle(
+                      //     color: Colors.white,
+                      //     fontSize: 48,
+                      //   ),
+                      // )
                     ],
                   ),
                 ),

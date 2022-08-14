@@ -87,8 +87,10 @@ class _LoginPageState extends State<LoginPage> {
             gradient: LinearGradient(
                 begin: Alignment.centerLeft,
                 end: Alignment.centerRight,
-                colors: [Color.fromARGB(255, 196, 168, 247),
-                Colors.deepPurple])),
+                colors: [
+                  Color.fromARGB(255, 196, 168, 247),
+                  Colors.deepPurple
+                ])),
         child: Text(
           'Login',
           style: TextStyle(fontSize: 20, color: Colors.white),
@@ -201,7 +203,7 @@ class _LoginPageState extends State<LoginPage> {
             Text(
               'Register',
               style: TextStyle(
-                  color: Color(0xfff79c4f),
+                  color: Colors.deepPurple,
                   fontSize: 13,
                   fontWeight: FontWeight.w600),
             ),
@@ -240,7 +242,7 @@ class _LoginPageState extends State<LoginPage> {
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: <Widget>[
                   SizedBox(height: height * .2),
-                  title(context,2),
+                  title(context, 2),
                   SizedBox(height: 50),
                   _emailPasswordWidget(),
                   SizedBox(height: 20),

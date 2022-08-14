@@ -1,5 +1,6 @@
 import 'package:demo/ui/screens/auth_pages/welcomePage.dart';
 
+import 'Widget/title.dart';
 import 'signup.dart';
 import 'package:flutter/material.dart';
 
@@ -63,30 +64,6 @@ class _ForgetPasswordState extends State<ForgetPassword> {
     );
   }
 
-  Widget _title() {
-    return RichText(
-      textAlign: TextAlign.center,
-      text: TextSpan(
-          text: 'd',
-          style: GoogleFonts.portLligatSans(
-            textStyle: Theme.of(context).textTheme.headline1,
-            fontSize: 30,
-            fontWeight: FontWeight.w700,
-            color: Colors.white,
-          ),
-          children: [
-            TextSpan(
-              text: 'ev',
-              style: TextStyle(color: Colors.black, fontSize: 30),
-            ),
-            TextSpan(
-              text: 'rnz',
-              style: TextStyle(color: Colors.white, fontSize: 30),
-            ),
-          ]),
-    );
-  }
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -106,12 +83,15 @@ class _ForgetPasswordState extends State<ForgetPassword> {
               gradient: LinearGradient(
                   begin: Alignment.topCenter,
                   end: Alignment.bottomCenter,
-                  colors: [Color(0xfffbb448), Color(0xffe46b10)])),
+                  colors: [
+                    Color.fromARGB(255, 196, 168, 247),
+                    Colors.deepPurple
+                  ])),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              _title(),
+              title(context, 1),
               SizedBox(
                 height: 80,
               ),

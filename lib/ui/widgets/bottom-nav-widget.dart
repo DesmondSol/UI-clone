@@ -1,6 +1,7 @@
 import 'package:demo/ui/screens/profile/community-page.dart';
 import 'package:demo/ui/screens/profile/personal-data.dart';
 import 'package:demo/ui/screens/profile/settings-page.dart';
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class BottomNavigationWidget extends StatefulWidget {
@@ -31,14 +32,15 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
         actions: <Widget>[
           IconButton(
             icon: const Icon(
-              Icons.help_outline_sharp,
+              CupertinoIcons.bell,
               color: Colors.black,
             ),
             tooltip: 'Help',
             onPressed: () {
               final snackBar = SnackBar(
+                // padding: EdgeInsets.all(8),
                 content: Text(
-                  'by Solomon T',
+                  'notifications',
                   textAlign: TextAlign.center,
                 ),
                 backgroundColor: Theme.of(context).primaryColor,
@@ -54,9 +56,22 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
               //     content: Text("by Solomon T")));
             },
           ),
+          IconButton(
+            icon: const Icon(
+              Icons.messenger_outline,
+              color: Colors.black,
+            ),
+            onPressed: () {},
+          )
         ],
       ),
-      body: [SettingsPage(), PersonalDataScreen(), CommunityPage()][_current],
+      body: [
+        CommunityPage(),
+        CommunityPage(),
+        CommunityPage(),
+        SettingsPage(),
+        PersonalDataScreen()
+      ][_current],
       bottomNavigationBar: BottomNavigationBar(
           backgroundColor: Colors.white,
           selectedItemColor: Colors.deepPurpleAccent,
@@ -68,9 +83,15 @@ class _BottomNavigationWidgetState extends State<BottomNavigationWidget> {
             });
           },
           items: [
-            BottomNavigationBarItem(label: "", icon: Icon(Icons.settings)),
-            BottomNavigationBarItem(label: "", icon: Icon(Icons.person)),
-            BottomNavigationBarItem(label: "", icon: Icon(Icons.group)),
+            BottomNavigationBarItem(label: "News", icon: Icon(Icons.newspaper)),
+            BottomNavigationBarItem(
+                label: "Blogs", icon: Icon(Icons.menu_book_sharp)),
+            BottomNavigationBarItem(
+                label: "Tenders", icon: Icon(Icons.forum_outlined)),
+            BottomNavigationBarItem(
+                label: "Dashboard",
+                icon: Icon(CupertinoIcons.chart_bar_alt_fill)),
+            BottomNavigationBarItem(label: "Profile", icon: Icon(Icons.person)),
           ]),
     );
   }
