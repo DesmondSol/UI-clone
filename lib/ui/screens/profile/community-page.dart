@@ -1,4 +1,4 @@
-import 'package:demo/ui/widgets/community-card.dart';
+import 'package:maseriya/ui/widgets/community-card.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

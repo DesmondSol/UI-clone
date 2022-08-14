@@ -1,4 +1,4 @@
-import 'package:demo/ui/screens/auth_pages/welcomePage.dart';
+import 'package:maseriya/ui/screens/auth_pages/welcomePage.dart';
 
 import 'Widget/title.dart';
 import 'signup.dart';

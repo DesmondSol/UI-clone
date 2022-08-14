@@ -1,4 +1,4 @@
-import 'package:demo/ui/widgets/setting-tile.dart';
+import 'package:maseriya/ui/widgets/setting-tile.dart';
 import 'package:flutter/material.dart';
 
 class SettingsPage extends StatelessWidget {

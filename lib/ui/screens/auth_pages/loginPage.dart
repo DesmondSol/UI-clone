@@ -1,5 +1,5 @@
-import 'package:demo/ui/screens/auth_pages/forgetPassword.dart';
-import 'package:demo/ui/screens/homeNavigation.dart';
+import 'package:maseriya/ui/screens/auth_pages/forgetPassword.dart';
+import 'package:maseriya/ui/screens/homeNavigation.dart';
 import 'package:flutter/material.dart';
 import 'Widget/title.dart';
 import 'signup.dart';

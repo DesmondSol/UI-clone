@@ -1,7 +1,7 @@
-import 'package:demo/ui/widgets/bottom-nav-widget.dart';
+import 'package:maseriya/ui/widgets/bottom-nav-widget.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/utils/ui/side_menu.dart';
-import 'package:demo/utils/ui/swipe_animation.dart';
+import 'package:maseriya/utils/ui/side_menu.dart';
+import 'package:maseriya/utils/ui/swipe_animation.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class MyHomeNavigation extends StatefulWidget {

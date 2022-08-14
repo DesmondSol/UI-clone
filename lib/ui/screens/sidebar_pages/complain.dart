@@ -1,8 +1,8 @@
 // ignore_for_file: deprecated_member_use
 
-import 'package:demo/ui/widgets/text-field-widget.dart';
-import 'package:demo/utils/data/date-helper.dart';
-import 'package:demo/utils/ui/helpers.dart';
+import 'package:maseriya/ui/widgets/text-field-widget.dart';
+import 'package:maseriya/utils/data/date-helper.dart';
+import 'package:maseriya/utils/ui/helpers.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'dart:math' show pi;

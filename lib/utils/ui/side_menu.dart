@@ -1,11 +1,11 @@
-import 'package:demo/ui/screens/auth_pages/Widget/title.dart';
-import 'package:demo/ui/screens/sidebar_pages/about-us.dart';
-import 'package:demo/ui/screens/sidebar_pages/complain.dart';
-import 'package:demo/ui/screens/sidebar_pages/help.dart';
+import 'package:maseriya/ui/screens/auth_pages/Widget/title.dart';
+import 'package:maseriya/ui/screens/sidebar_pages/about-us.dart';
+import 'package:maseriya/ui/screens/sidebar_pages/complain.dart';
+import 'package:maseriya/ui/screens/sidebar_pages/help.dart';
 import 'package:flutter/material.dart';
-import 'package:demo/ui/screens/new_pages/account.dart';
-import 'package:demo/data/models/model.dart';
-import 'package:demo/ui/screens/new_pages/settings.dart';
+import 'package:maseriya/ui/screens/new_pages/account.dart';
+import 'package:maseriya/data/models/model.dart';
+import 'package:maseriya/ui/screens/new_pages/settings.dart';
 
 class SideMenu extends StatefulWidget {
   final Function(int) _onMenuItemSelection;

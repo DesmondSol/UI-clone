@@ -1,4 +1,4 @@
-import 'package:demo/ui/screens/homeNavigation.dart';
+import 'package:maseriya/ui/screens/homeNavigation.dart';
 import 'package:flutter/material.dart';
 import 'Widget/bezierContainer.dart';
 import 'Widget/title.dart';

@@ -1,6 +1,6 @@
-import 'package:demo/ui/screens/profile/community-page.dart';
-import 'package:demo/ui/screens/profile/personal-data.dart';
-import 'package:demo/ui/screens/profile/settings-page.dart';
+import 'package:maseriya/ui/screens/profile/community-page.dart';
+import 'package:maseriya/ui/screens/profile/personal-data.dart';
+import 'package:maseriya/ui/screens/profile/settings-page.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

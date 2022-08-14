@@ -1,4 +1,4 @@
-import 'package:demo/ui/widgets/toggle_switch.dart';
+import 'package:maseriya/ui/widgets/toggle_switch.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
